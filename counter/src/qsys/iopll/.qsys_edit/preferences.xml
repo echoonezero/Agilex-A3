@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <window width="986" height="1009" x="0" y="0" />
+ <generation path="" simulation="VERILOG" modelsim="1" />
+</preferences>

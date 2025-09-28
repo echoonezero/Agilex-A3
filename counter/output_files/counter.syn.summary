@@ -1,0 +1,9 @@
+Synthesis Status : Successful - Sun Sep 28 14:53:35 2025
+Revision Name : counter
+Top-level Entity Name : counter_top
+Family : Agilex 3
+Quartus Prime Version : 25.1.1 Build 125 07/31/2025 SC Pro Edition
+Device : A3CZ135BB18AE7S
+Logic utilization estimate (in ALMs) : 16 / 45,800 ( < 1 % )
+Total dedicated logic registers : 27
+Estimated DSP Blocks Post-Merging : 0

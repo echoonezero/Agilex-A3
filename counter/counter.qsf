@@ -1,0 +1,56 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2025  Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus Prime License Agreement,
+# the Altera IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Altera and sold by Altera or its authorized distributors.  Please
+# refer to the Altera Software License Subscription Agreements 
+# on the Quartus Prime software download page.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 25.1.1 Build 125 07/31/2025 SC Pro Edition
+# Date created = 13:58:38  September 28, 2025
+#
+# -------------------------------------------------------------------------- #
+set_global_assignment -name TOP_LEVEL_ENTITY counter_top
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 25.1.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:58:38  SEPTEMBER 28, 2025"
+set_global_assignment -name LAST_QUARTUS_VERSION "25.1.1 Pro Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
+set_global_assignment -name DEVICE A3CZ135BB18AE7S
+set_global_assignment -name FAMILY "Agilex 3"
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name VERILOG_FILE src/hdl/counter.v
+set_global_assignment -name IP_FILE src/qsys/iopll/iopll.ip
+set_global_assignment -name VERILOG_FILE src/hdl/mux.v
+set_global_assignment -name VERILOG_FILE src/hdl/counter_top.v
+set_location_assignment PIN_K43 -to CLOCK0_50 -comment IOBANK_3A_T
+set_location_assignment PIN_E2 -to KEY[0] -comment IOBANK_6H
+set_location_assignment PIN_K3 -to KEY[1] -comment IOBANK_6H
+set_location_assignment PIN_AG2 -to LED[0] -comment IOBANK_6H
+set_location_assignment PIN_AM6 -to LED[1] -comment IOBANK_6H
+set_location_assignment PIN_AF1 -to LED[2] -comment IOBANK_6H
+set_location_assignment PIN_AF2 -to LED[3] -comment IOBANK_6H
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to LED[0] -entity counter_top
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to LED[3] -entity counter_top
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to KEY[1] -entity counter_top
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to KEY[0] -entity counter_top
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to KEY -entity counter_top
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to LED[2] -entity counter_top
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to LED[1] -entity counter_top
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to LED -entity counter_top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 6MA -to LED[0] -entity counter_top
+set_instance_assignment -name CURRENT_STRENGTH_NEW 6MA -to LED[3] -entity counter_top
+set_instance_assignment -name IO_STANDARD "1.2-V" -to CLOCK0_50 -entity counter_top
